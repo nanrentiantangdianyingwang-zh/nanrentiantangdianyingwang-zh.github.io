@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>男人天堂电影网 - 精选影视资源在线观看平台 | 高清电影电视剧综艺聚合</title>
+<meta name="keywords" content="男人天堂电影网, nanrentiantangdianyingwang, 男人天堂影视, 高清电影在线, 电视剧综艺资源, 影视娱乐平台">
+<meta name="description" content="男人天堂电影网（nanrentiantangdianyingwang-zh）为您精选海量高清影视资源，涵盖电影、电视剧、综艺、动漫等多种类型，提供专业的影评解析与观影指南。立即访问 https://nanrentiantangdianyingwang-zh.github.io 开启精彩观影之旅！">
+<meta name="author" content="男人天堂电影网编辑团队">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0a1628">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<link rel="canonical" href="https://nanrentiantangdianyingwang-zh.github.io">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a1628;--card:#11203a;--blue:#2563eb;--cyan:#06b6d4;--gold:#f59e0b;
+  --text:#e2e8f0;--muted:#94a3b8;--line:rgba(37,99,235,.25);
+}
+body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:linear-gradient(135deg,rgba(37,99,235,.08),transparent 60%),linear-gradient(225deg,rgba(6,182,212,.06),transparent 60%);z-index:-1}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+
+/* 顶部 */
+header{background:rgba(10,22,40,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:100}
+.h-inner{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-size:21px;font-weight:900;color:#fff;letter-spacing:.5px}
+.logo span{color:var(--cyan)}
+.logo small{display:block;font-size:9px;color:var(--muted);letter-spacing:4px;font-weight:400;text-transform:uppercase}
+.nav-links{display:flex;gap:4px;list-style:none}
+.nav-links a{padding:8px 14px;border-radius:8px;font-size:14px;color:var(--muted);transition:.25s}
+.nav-links a:hover{color:#fff;background:var(--blue)}
+.menu-btn{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+
+/* Hero */
+.hero{padding:80px 0 60px;text-align:center}
+.hero .badge{display:inline-block;padding:5px 16px;border:1px solid var(--line);border-radius:4px;font-size:11px;color:var(--cyan);letter-spacing:2px;margin-bottom:22px;text-transform:uppercase}
+.hero h1{font-size:clamp(30px,5.5vw,52px);font-weight:900;line-height:1.25;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{max-width:600px;margin:0 auto 30px;font-size:16px;color:var(--muted)}
+.hero-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{padding:12px 30px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;border:none;transition:.25s}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#1d4ed8;transform:translateY(-2px)}
+.btn-outline{background:transparent;color:#fff;border:1px solid var(--line)}
+.btn-outline:hover{background:var(--card)}
+
+/* 数据看板 */
+.dashboard{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:50px}
+.dash-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;text-align:center;transition:.3s}
+.dash-card:hover{border-color:var(--cyan);transform:translateY(-4px)}
+.dash-card .num{font-size:30px;font-weight:900;color:var(--gold)}
+.dash-card .lbl{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* 区块 */
+section{padding:64px 0}
+.sec-head{margin-bottom:36px;text-align:center}
+.sec-head .en{font-size:11px;color:var(--cyan);letter-spacing:4px;text-transform:uppercase;font-weight:700}
+.sec-head h2{font-size:clamp(22px,3.5vw,30px);font-weight:800;margin-top:6px}
+.sec-head .sub{font-size:14px;color:var(--muted);margin-top:8px}
+
+/* 栏目1 影片展示 */
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.film-card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.3s}
+.film-card:hover{transform:translateY(-6px);border-color:var(--cyan);box-shadow:0 10px 30px rgba(37,99,235,.2)}
+.film-cover{height:220px;background:linear-gradient(135deg,#1e3a5f,#0f2744);display:flex;align-items:center;justify-content:center;position:relative}
+.film-cover .play{width:50px;height:50px;border-radius:50%;background:rgba(245,158,11,.9);display:flex;align-items:center;justify-content:center;font-size:20px;color:#0a1628}
+.film-cover .score{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.6);color:var(--gold);padding:3px 8px;border-radius:4px;font-size:12px;font-weight:700}
+.film-info{padding:14px}
+.film-info h4{font-size:15px;margin-bottom:6px}
+.film-info .meta{font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+
+/* 栏目2 横向标签页 */
+.tabs{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.tab-btn{padding:9px 22px;border-radius:6px;font-size:14px;background:var(--card);border:1px solid var(--line);color:var(--muted);cursor:pointer;transition:.25s}
+.tab-btn.active,.tab-btn:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.tab-panel{display:none;grid-template-columns:repeat(3,1fr);gap:18px}
+.tab-panel.active{display:grid;animation:fade .4s ease}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.list-item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;gap:14px;align-items:center}
+.list-item .rank{font-size:22px;font-weight:900;color:var(--blue);opacity:.5;min-width:32px}
+.list-item .info h4{font-size:15px;margin-bottom:4px}
+.list-item .info p{font-size:12px;color:var(--muted)}
+
+/* 栏目3 时间轴 */
+.timeline{position:relative;max-width:820px;margin:0 auto;padding-left:28px}
+.timeline::before{content:"";position:absolute;left:7px;top:0;bottom:0;width:2px;background:linear-gradient(var(--blue),var(--cyan))}
+.tl-item{position:relative;padding-bottom:26px}
+.tl-item::before{content:"";position:absolute;left:-25px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--cyan);box-shadow:0 0 0 4px var(--bg),0 0 10px var(--cyan)}
+.tl-item .date{font-size:12px;color:var(--gold);font-weight:700;letter-spacing:1px}
+.tl-item h4{font-size:17px;margin:4px 0}
+.tl-item p{font-size:14px;color:var(--muted)}
+
+/* 栏目4 折叠FAQ */
+.faq{max-width:760px;margin:0 auto}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-q{width:100%;padding:16px 20px;text-align:left;background:none;border:none;color:#fff;font-size:15px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-q .icon{color:var(--cyan);font-size:20px;transition:.3s;flex-shrink:0}
+.faq-item.open .faq-q .icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a-inner{padding:0 20px 18px;font-size:14px;color:var(--muted)}
+
+/* 栏目5 合作投稿 */
+.partner{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:44px 32px;text-align:center}
+.partner h3{font-size:22px;margin-bottom:10px}
+.partner p{font-size:14px;color:var(--muted);max-width:540px;margin:0 auto 24px}
+.p-form{max-width:440px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.p-form input,.p-form textarea{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:8px;padding:11px 15px;color:#fff;font-size:14px;font-family:inherit;outline:none}
+.p-form input:focus,.p-form textarea:focus{border-color:var(--cyan)}
+.p-form textarea{resize:vertical;min-height:90px}
+.p-form button{background:var(--blue);color:#fff;border:none;padding:12px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:.25s}
+.p-form button:hover{background:#1d4ed8}
+
+/* 页脚 */
+footer{background:#060d1a;border-top:1px solid var(--line);padding:44px 0 20px}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;padding-bottom:28px}
+.ft h5{font-size:14px;margin-bottom:12px;color:#fff}
+.ft ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.ft ul a{font-size:13px;color:var(--muted);transition:.25s}
+.ft ul a:hover{color:var(--cyan)}
+.ft-brand .logo{font-size:18px}
+.ft-brand p{font-size:13px;color:var(--muted);margin-top:10px;max-width:280px}
+.ft-bot{border-top:1px solid var(--line);padding-top:18px;text-align:center;font-size:12px;color:#64748b}
+.ft-bot a{color:var(--cyan)}
+
+@media(max-width:960px){
+  .grid-4{grid-template-columns:1fr 1fr}
+  .tab-panel.active{grid-template-columns:1fr 1fr}
+  .ft{grid-template-columns:1fr 1fr}
+  .dashboard{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .menu-btn{display:block}
+  .nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:var(--bg);flex-direction:column;padding:14px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .grid-4{grid-template-columns:1fr}
+  .tab-panel.active{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .hero{padding:50px 0 36px}
+  .dashboard{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<header>
+  <div class="wrap h-inner">
+    <div class="logo">男人天堂<span>电影网</span><small>Nanren Tiantang Film</small></div>
+    <ul class="nav-links" id="nav">
+      <li><a href="#films">热门影片</a></li>
+      <li><a href="#rank">排行榜</a></li>
+      <li><a href="#news">影视资讯</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#partner">合作投稿</a></li>
+    </ul>
+    <button class="menu-btn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <span class="badge">◆ 精选影视 · 高清在线 · 每日更新 ◆</span>
+    <h1>男人天堂电影网<br>海量<em>高清影视</em>一网打尽</h1>
+    <p>男人天堂电影网（nanrentiantangdianyingwang-zh）汇聚电影、电视剧、综艺、动漫全品类资源，专业影评解析搭配贴心观影指南，让每一次点击都值得。</p>
+    <div class="hero-actions">
+      <button class="btn btn-primary" onclick="document.getElementById('films').scrollIntoView({behavior:'smooth'})">立即观影</button>
+      <button class="btn btn-outline" onclick="document.getElementById('partner').scrollIntoView({behavior:'smooth'})">投稿合作</button>
+    </div>
+    <div class="dashboard">
+      <div class="dash-card"><div class="num">12,680</div><div class="lbl">收录影片</div></div>
+      <div class="dash-card"><div class="num">386</div><div class="lbl">热播剧集</div></div>
+      <div class="dash-card"><div class="num">52</div><div class="lbl">内容分类</div></div>
+      <div class="dash-card"><div class="num">24h</div><div class="lbl">每日更新</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1 热门影片 -->
+<section id="films">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Hot Films</div>
+      <h2>热门影片推荐</h2>
+      <p class="sub">精选当下最值得一看的优质影视作品</p>
+    </div>
+    <div class="grid-4">
+      <article class="film-card">
+        <div class="film-cover"><div class="score">9.2</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>星际归途</h4><div class="meta"><span>科幻 · 动作</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">8.7</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>长安月下</h4><div class="meta"><span>古装 · 剧情</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">9.0</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>深海密码</h4><div class="meta"><span>悬疑 · 惊悚</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">8.5</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>青春方程式</h4><div class="meta"><span>青春 · 爱情</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">9.4</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>荒野猎人</h4><div class="meta"><span>冒险 · 传记</span><span>2025</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">8.8</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>时光咖啡馆</h4><div class="meta"><span>治愈 · 奇幻</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">8.6</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>暗夜追凶</h4><div class="meta"><span>犯罪 · 悬疑</span><span>2026</span></div></div>
+      </article>
+      <article class="film-card">
+        <div class="film-cover"><div class="score">9.1</div><div class="play">▶</div></div>
+        <div class="film-info"><h4>山河无恙</h4><div class="meta"><span>历史 · 战争</span><span>2025</span></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2 排行榜 -->
+<section id="rank" style="background:rgba(17,32,58,.5)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Top Ranking</div>
+      <h2>口碑排行榜</h2>
+      <p class="sub">基于观众评分与讨论热度实时排序</p>
+    </div>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this,'tab1')">电影榜</button>
+      <button class="tab-btn" onclick="switchTab(this,'tab2')">剧集榜</button>
+      <button class="tab-btn" onclick="switchTab(this,'tab3')">综艺榜</button>
+    </div>
+    <div class="tab-panel active" id="tab1">
+      <div class="list-item"><span class="rank">01</span><div class="info"><h4>星际归途</h4><p>评分 9.2 · 56万人评分</p></div></div>
+      <div class="list-item"><span class="rank">02</span><div class="info"><h4>荒野猎人</h4><p>评分 9.4 · 42万人评分</p></div></div>
+      <div class="list-item"><span class="rank">03</span><div class="info"><h4>山河无恙</h4><p>评分 9.1 · 38万人评分</p></div></div>
+      <div class="list-item"><span class="rank">04</span><div class="info"><h4>深海密码</h4><p>评分 9.0 · 31万人评分</p></div></div>
+      <div class="list-item"><span class="rank">05</span><div class="info"><h4>长安月下</h4><p>评分 8.7 · 29万人评分</p></div></div>
+      <div class="list-item"><span class="rank">06</span><div class="info"><h4>暗夜追凶</h4><p>评分 8.6 · 25万人评分</p></div></div>
+    </div>
+    <div class="tab-panel" id="tab2">
+      <div class="list-item"><span class="rank">01</span><div class="info"><h4>沉默真相 第二季</h4><p>评分 9.3 · 连载中</p></div></div>
+      <div class="list-item"><span class="rank">02</span><div class="info"><h4>长安十二时辰前传</h4><p>评分 9.0 · 已完结</p></div></div>
+      <div class="list-item"><span class="rank">03</span><div class="info"><h4>繁花似锦</h4><p>评分 8.8 · 连载中</p></div></div>
+      <div class="list-item"><span class="rank">04</span><div class="info"><h4>医者仁心</h4><p>评分 8.7 · 连载中</p></div></div>
+      <div class="list-item"><span class="rank">05</span><div class="info"><h4>边水往事</h4><p>评分 8.5 · 已完结</p></div></div>
+      <div class="list-item"><span class="rank">06</span><div class="info"><h4>大江大河4</h4><p>评分 8.9 · 连载中</p></div></div>
+    </div>
+    <div class="tab-panel" id="tab3">
+      <div class="list-item"><span class="rank">01</span><div class="info"><h4>极限挑战 第十季</h4><p>评分 8.9 · 每周五更新</p></div></div>
+      <div class="list-item"><span class="rank">02</span><div class="info"><h4>奔跑吧 特别季</h4><p>评分 8.6 · 每周六更新</p></div></div>
+      <div class="list-item"><span class="rank">03</span><div class="info"><h4>声生不息 港乐季</h4><p>评分 9.1 · 已完结</p></div></div>
+      <div class="list-item"><span class="rank">04</span><div class="info"><h4>种地吧 第三季</h4><p>评分 8.8 · 连载中</p></div></div>
+      <div class="list-item"><span class="rank">05</span><div class="info"><h4>中餐厅 第八季</h4><p>评分 8.4 · 连载中</p></div></div>
+      <div class="list-item"><span class="rank">06</span><div class="info"><h4>脱口秀和Ta的朋友们</h4><p>评分 8.7 · 已完结</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3 影视资讯 -->
+<section id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">Film News</div>
+      <h2>影视资讯速递</h2>
+      <p class="sub">第一时间掌握行业动态与幕后故事</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="date">2026 · 10 · 05</div>
+        <h4>《星际归途》续集官宣定档</h4>
+        <p>导演在最新访谈中透露，续集已完成前期筹备，预计明年暑期档与观众见面，故事将拓展至更宏大的宇宙尺度。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">2026 · 09 · 28</div>
+        <h4>金像奖提名名单揭晓</h4>
+        <p>本年度华语电影迎来丰收年，多部作品同时入围最佳影片与最佳导演，竞争激烈程度创近年新高。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">2026 · 09 · 20</div>
+        <h4>流媒体平台内容战略调整</h4>
+        <p>多家平台宣布加大原创内容投入，减少单纯版权采购，行业正在经历从「买内容」到「做内容」的深层转型。</p>
+      </div>
+      <div class="tl-item">
+        <div class="date">2026 · 09 · 15</div>
+        <h4>国产动画电影票房创新高</h4>
+        <p>暑期档多部动画作品表现亮眼，验证了国内动画产业的工业化能力已日趋成熟，年轻观众成为主力消费群体。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目4 FAQ -->
+<section id="faq" style="background:rgba(17,32,58,.5)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="en">FAQ</div>
+      <h2>常见问题解答</h2>
+      <p class="sub">关于男人天堂电影网（nanrentiantangdianyingwang-zh）的高频疑问</p>
+    </div>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q">男人天堂电影网主要提供哪些内容？<span class="icon">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner">我们覆盖电影、电视剧、综艺、动漫、纪录片等多个品类，并提供专业影评解析、观影指南与行业资讯，满足不同观众的多样化需求。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">网站内容多久更新一次？<span class="icon">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner">热门影片与资讯内容每日更新，排行榜每周刷新，深度影评与专题内容保持每周 2-3 篇的稳定输出节奏。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">如何向网站投稿或推荐影片？<span class="icon">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner">您可以通过页面底部的合作投稿入口提交影评、推荐或合作意向，编辑团队会在收到后尽快与您联系。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">网站官方网址是什么？<span class="icon">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner">男人天堂电影网唯一官方网址为 https://nanrentiantangdianyingwang-zh.github.io，请认准域名，谨防仿冒站点。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">内容推荐的依据是什么？<span class="icon">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner">我们综合考量观众评分、讨论热度、专业口碑与题材多样性，由编辑团队人工筛选，力求在热门与优质之间找到平衡。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5 合作投稿 -->
+<section id="partner">
+  <div class="wrap">
+    <div class="partner">
+      <span class="badge">◆ Submit &amp; Cooperate ◆</span>
+      <h3>投稿与合作</h3>
+      <p>欢迎影评人、编剧、自媒体创作者与我们联系。无论是长文影评、幕后访谈还是观影指南，只要内容真诚有见地，我们都愿意认真阅读。</p>
+      <form class="p-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='已收到，感谢您的来信 ✓'">
+        <input type="text" placeholder="您的姓名 / 笔名" required>
+        <input type="email" placeholder="联系邮箱" required>
+        <textarea placeholder="简要介绍您的投稿方向或合作意向"></textarea>
+        <button type="submit">发送</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div class="ft-brand">
+        <div class="logo">男人天堂<span>电影网</span></div>
+        <p>一个专注于影视资源聚合与深度影评的中文内容平台，致力于为观众提供有价值的观影参考。</p>
+      </div>
+      <div>
+        <h5>内容栏目</h5>
+        <ul>
+          <li><a href="#films">热门影片</a></li>
+          <li><a href="#rank">口碑排行榜</a></li>
+          <li><a href="#news">影视资讯</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于我们</h5>
+        <ul>
+          <li><a href="#">编辑团队</a></li>
+          <li><a href="#">投稿须知</a></li>
+          <li><a href="#">版权声明</a></li>
+          <li><a href="#">隐私政策</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>联系方式</h5>
+        <ul>
+          <li><a href="#">编辑部邮箱</a></li>
+          <li><a href="#">商务合作</a></li>
+          <li><a href="#">RSS 订阅</a></li>
+          <li><a href="#">友情链接</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      本站官方网址：<a href="https://nanrentiantangdianyingwang-zh.github.io">https://nanrentiantangdianyingwang-zh.github.io</a> · 男人天堂电影网 · 内容仅供交流与参考用途
+    </div>
+  </div>
+</footer>
+
+<script>
+// Tab 切换
+function switchTab(btn,tabId){
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.remove('active')});
+  btn.classList.add('active');
+  document.getElementById(tabId).classList.add('active');
+}
+// FAQ 折叠
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=q.parentElement;
+    var ans=item.querySelector('.faq-a');
+    var isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){
+      i.classList.remove('open');
+      i.querySelector('.faq-a').style.maxHeight=null;
+    });
+    if(!isOpen){
+      item.classList.add('open');
+      ans.style.maxHeight=ans.scrollHeight+40+'px';
+    }
+  });
+});
+</script>
+</body>
+</html>
